@@ -18,6 +18,7 @@ const App = () => {
       }
     } catch(e) {
       console.log("reading error")
+      alert("Ошибка чтения памяти");
       // error reading value
     }
   }
@@ -28,6 +29,7 @@ const App = () => {
 
   return (
     <NavigationContainer>
+      <StatusBar backgroundColor={null}></StatusBar>
       <Navigator />    
     </NavigationContainer>
   );

@@ -48,16 +48,13 @@ export default function NewUserAgreement({ navigation }) {
         source={sourcePdf}
         onLoadComplete={(numberOfPages, filePath) => {
           console.log(`Number of pages: ${numberOfPages}`);
-          
+          console.log(filePath)
+
         } }
-        onPageChanged={(page, numberOfPages) => {
-        //  console.log(`Current page: ${page}`); //отображает просматриваемую страницу в консоли
-        
-        } }
+      
         onError={(error) => {
           console.log(error);
-          alert("Ошибка подключения к серверу. Попробуйте подключиться позднее или обновите приложение");
-        
+          alert("Ошибка подключения к серверу. Попробуйте подключиться позднее или обновите приложение. Код:", error.code, error.message);
         } }
         onPressLink={(uri) => {
           console.log(`Link pressed: ${uri}`);

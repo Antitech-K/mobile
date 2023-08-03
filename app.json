@@ -12,6 +12,14 @@
         "android.permission.ACCESS_NETWORK_STATE"
       ],
       "package": "com.antitech.mobile"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "d45f276b-b769-4682-be80-5016f082621e"
+      }
+    },
+    "ios": {
+      "bundleIdentifier": "y"
     }
   }
 }
